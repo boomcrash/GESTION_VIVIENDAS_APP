@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Gestion_Viviendas</string>
+    <string-array name="categorias">
+        <item>COMIDA</item>
+        <item>AGUA</item>
+        <item>LUZ</item>
+    </string-array>
+</resources>

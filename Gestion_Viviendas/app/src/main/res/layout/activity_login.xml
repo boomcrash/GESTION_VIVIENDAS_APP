@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".loginActivity">
+
+    <LinearLayout
+        android:id="@+id/text_login"
+        android:layout_width="340dp"
+        android:layout_height="422dp"
+        android:layout_marginLeft="5dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/background"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134">
+
+        <TextView
+
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="INGRESO"
+
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHighlight="@color/black"
+            android:textColorHint="@color/black"
+            android:textColorLink="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_comment"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:adjustViewBounds="true"
+            android:text="INGRESA TU USUARIO Y CONTRASEÑA"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="USUARIO"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="CONTRASEÑA"
+            android:textAlignment="center" />
+
+
+        <Button
+            android:id="@+id/ingresar"
+            android:layout_width="140dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="104dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/btn_generate"
+            android:src="@drawable/ic_listo"
+            android:text="INGRESAR"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/teal_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+    z
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/bird2"
+        android:layout_width="328dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.987"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/login" />
+</androidx.constraintlayout.widget.ConstraintLayout>
